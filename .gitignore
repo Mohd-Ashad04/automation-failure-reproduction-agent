@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Local runtime data and sensitive artifacts
+data/
+artifacts/
+traces/
+reports/generated/
+*.trace
+trace.zip
+playwright-report/
+test-results/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
