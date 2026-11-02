@@ -1,0 +1,226 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Mohd Ashad\\AppData\\Local\\npm-cache\\_npx\\420ff84f11983ee5\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.config.js"
+    ],
+    "configFile": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\playwright.config.js",
+    "rootDir": "C:/Users/Mohd Ashad/Downloads/automation-failure-reproduction-agent-starter/automation-failure-reproduction-agent/tests/fixtures",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Mohd Ashad/Downloads/automation-failure-reproduction-agent-starter/automation-failure-reproduction-agent/tests/fixtures/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Mohd Ashad/Downloads/automation-failure-reproduction-agent-starter/automation-failure-reproduction-agent/tests/fixtures",
+        "testIgnore": [],
+        "testMatch": [
+          "verify.spec.js"
+        ],
+        "timeout": 10000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures",
+        "snapshotDir": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures",
+        "testIgnore": [],
+        "testMatch": "verify.spec.js",
+        "timeout": 10000,
+        "use": {
+          "headless": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "real_playwright_report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "verify.spec.js",
+      "file": "verify.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "AFRA Local Verification Suite",
+          "file": "verify.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "passing test: heading has expected text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-27T12:26:47.636Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "78328403e4e8559aadb2-330a9f09fbcaaac58374",
+              "file": "verify.spec.js",
+              "line": 7,
+              "column": 3
+            },
+            {
+              "title": "failing test: status has expected text",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 10000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2143,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#app-status')\nExpected: \u001b[32m\"STATUS: \u001b[7mNONEXISTENT_FAILING_STATE\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"STATUS: \u001b[7mREADY\u001b[27m\"\u001b[39m\nTimeout:  2000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('#app-status') with timeout 2000ms\u001b[22m\n\u001b[2m  - waiting for locator('#app-status')\u001b[22m\n\u001b[2m    19 × locator resolved to <p id=\"app-status\">STATUS: READY</p>\u001b[22m\n\u001b[2m       - unexpected value \"STATUS: READY\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#app-status')\nExpected: \u001b[32m\"STATUS: \u001b[7mNONEXISTENT_FAILING_STATE\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"STATUS: \u001b[7mREADY\u001b[27m\"\u001b[39m\nTimeout:  2000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('#app-status') with timeout 2000ms\u001b[22m\n\u001b[2m  - waiting for locator('#app-status')\u001b[22m\n\u001b[2m    19 × locator resolved to <p id=\"app-status\">STATUS: READY</p>\u001b[22m\n\u001b[2m       - unexpected value \"STATUS: READY\"\u001b[22m\n\n    at C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\verify.spec.js:17:26",
+                        "location": {
+                          "file": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\verify.spec.js",
+                          "column": 26,
+                          "line": 17
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#app-status'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[90m// Deliberately failing assertion with predictable message:\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(status)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'STATUS: NONEXISTENT_FAILING_STATE'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m2000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\verify.spec.js",
+                            "column": 26,
+                            "line": 17
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#app-status')\nExpected: \u001b[32m\"STATUS: \u001b[7mNONEXISTENT_FAILING_STATE\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"STATUS: \u001b[7mREADY\u001b[27m\"\u001b[39m\nTimeout:  2000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('#app-status') with timeout 2000ms\u001b[22m\n\u001b[2m  - waiting for locator('#app-status')\u001b[22m\n\u001b[2m    19 × locator resolved to <p id=\"app-status\">STATUS: READY</p>\u001b[22m\n\u001b[2m       - unexpected value \"STATUS: READY\"\u001b[22m\n\n\n  15 |     const status = page.locator('#app-status');\n  16 |     // Deliberately failing assertion with predictable message:\n> 17 |     await expect(status).toHaveText('STATUS: NONEXISTENT_FAILING_STATE', { timeout: 2000 });\n     |                          ^\n  18 |   });\n  19 | });\n  20 |\n    at C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\verify.spec.js:17:26"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-27T12:26:48.193Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\test-results\\verify-AFRA-Local-Verifica-efd76-st-status-has-expected-text-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Mohd Ashad\\Downloads\\automation-failure-reproduction-agent-starter\\automation-failure-reproduction-agent\\tests\\fixtures\\verify.spec.js",
+                        "column": 26,
+                        "line": 17
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "78328403e4e8559aadb2-096fe3341eec78f72231",
+              "file": "verify.spec.js",
+              "line": 13,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T12:26:47.228Z",
+    "duration": 3768.458,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
