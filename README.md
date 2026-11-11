@@ -6,7 +6,7 @@ A local-first engineering project that investigates failed Playwright runs, runs
 >
 > **Initial scope:** Python + Playwright, controlled local demo application, evidence-backed diagnosis, bounded experiments, and explicit reproduction verification.
 
-## Why this project exists
+## Why this project exists!
 
 A failed browser test can be intermittent: it fails in one run and passes in another. Test reports and traces provide evidence, but engineers still need to inspect the evidence, form hypotheses, rerun the test under controlled conditions, and decide whether the original failure was actually reproduced.
 
@@ -14,7 +14,7 @@ This project explores whether that workflow can be made more repeatable and audi
 
 It is not intended to be a universal autonomous debugger. The first milestone targets deliberately injected failure scenarios in a local demo application.
 
-## Core workflow
+## Core workflow!
 
 1. Import a Playwright test report and available artifacts.
 2. Normalize the failure evidence.
